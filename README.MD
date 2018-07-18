@@ -1,30 +1,32 @@
 
 - Cluster Creation: it will auto create instance in multi zone by below command with create cluster. 
 
-Asia : 3 instance
-asia-southeast1-a  - 1 instance 
-Asia-southeast1-b  - 1 instance 
-asia-southeast1-c  - 1 instance 
+- Asia : 3 instance
+- asia-southeast1-a  - 1 instance 
+- Asia-southeast1-b  - 1 instance 
+- asia-southeast1-c  - 1 instance 
 
 
-Europe : 3 instance
-europe-north1-a  - 1 instance 
-europe-north1-b  - 1 instance 
-europe-north1-c  - 1 instance 
+- Europe : 3 instance
+- europe-north1-a  - 1 instance 
+- europe-north1-b  - 1 instance 
+- europe-north1-c  - 1 instance 
 
 
 
-Create global DNS Zone :
+- Create global DNS Zone :
 
 gcloud dns managed-zones create gfed --description "Kubernetes Federation Zone" --dns-name devops.vishalvyas.com
 
+
+- To check : 
 gcloud dns managed-zones describe gfed
 
 =====================================================================
 
 
 
-Create Cluster in Asia,points kubectl to it, user to the cluster-admin role :
+- Create Cluster in Asia,points kubectl to it, user to the cluster-admin role :
 
 
 gcloud container clusters create asia --zone asia-southeast1-a --additional-zones asia-southeast1-b,asia-southeast1-c --num-nodes 1 --scopes cloud-platform
