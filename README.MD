@@ -2,15 +2,15 @@
 - Cluster Creation: it will auto create instance in multi zone by below command with create cluster. 
 
 - Asia : 3 instance
-- asia-southeast1-a  - 1 instance 
-- Asia-southeast1-b  - 1 instance 
-- asia-southeast1-c  - 1 instance 
+ asia-southeast1-a  - 1 instance 
+ Asia-southeast1-b  - 1 instance 
+ asia-southeast1-c  - 1 instance 
 
 
 - Europe : 3 instance
-- europe-north1-a  - 1 instance 
-- europe-north1-b  - 1 instance 
-- europe-north1-c  - 1 instance 
+ europe-north1-a  - 1 instance 
+ europe-north1-b  - 1 instance 
+ europe-north1-c  - 1 instance 
 
 
 
@@ -19,7 +19,7 @@
 gcloud dns managed-zones create gfed --description "Kubernetes Federation Zone" --dns-name devops.vishalvyas.com
 
 
-- To check : 
+-- To check : 
 gcloud dns managed-zones describe gfed
 
 =====================================================================
