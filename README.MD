@@ -19,7 +19,7 @@
 gcloud dns managed-zones create gfed --description "Kubernetes Federation Zone" --dns-name devops.vishalvyas.com
 
 
--- To check : 
+- To check : 
 gcloud dns managed-zones describe gfed
 
 =====================================================================
@@ -44,7 +44,7 @@ kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-ad
 
 
 
-Create Cluster in America,points kubectl to it, user to the cluster-admin role : 
+- Create Cluster in America,points kubectl to it, user to the cluster-admin role : 
 
 gcloud container clusters create europe --zone europe-north1-a --additional-zones europe-north1-b,europe-north1-c --num-nodes 1 --scopes cloud-platform
 
